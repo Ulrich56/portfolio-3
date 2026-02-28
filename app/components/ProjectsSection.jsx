@@ -7,7 +7,7 @@ export default function ProjectsSection() {
   ]
 
   return (
-    <section className="py-20">
+    <section className="py-20 hover:bg-linear-to-bl from-gray-800 via-black/25 to-gray-800 transition" id="projects">
       <h2 className="text-3xl font-bold text-center mb-10">Mes Projets</h2>
       <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
         {projects.map((p, i) => (

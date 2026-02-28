@@ -15,9 +15,8 @@ export default function SkillsSection() {
       hidden: { opacity: 0, y: 20 },
       visible: { opacity: 1, y: 0 },
     }
-    
 
-    const delay = 0.3
+    const delay = 0.15
 
     return (
       <motion.div
@@ -27,71 +26,48 @@ export default function SkillsSection() {
         animate={inView ? "visible" : "hidden"}
         custom={index}
         transition={{ duration: 0.6, delay: index * delay }}
-        className="flex items-center justify-center"
+        className="flex items-center justify-center p-6 rounded-xl 
+                   bg-white/10 backdrop-blur-md border border-white/20 
+                   transition-transform duration-300 hover:scale-110 
+                   hover:bg-white/20 hover:border-white/50"
       >
         {icon}
       </motion.div>
     )
   }
-  
-  return (
-    <section id="skills" className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden pb-40 py-15 lg:pb-80">
-    <div>
-      
-      <section className="h-screen flex flex-col items-center justify-center bg-linear-to-b from-black to-gray-900 text-white">
-      <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }} className="mt-4 text-lg text-gray-300" >
-        Développeur Fullstack passionné par les interfaces immersives
-      </motion.p>
-    </section>
 
-      <div className="flex justify-center mb-2">
-        <h3 className="text-white font-medium cursive text-2xl">
+  const renderCategory = (title, skills) => (
+    <div className="w-full">
+      <h4 className="text-xl font-semibold text-blue-400 mb-4">{title}</h4>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {skills.map((skill, index) => (
+          <SkillItem key={index} icon={skill.icon} index={index}/>
+        ))}
+      </div>
+    </div>
+  )
+
+  return (
+    <section id="skills" className="flex flex-col items-center mt-20 justify-center gap-10 py-20 px-6 lg:px-24 text-white">
+      <h1 className="text-3xl italic hover:text-amber-300 underline">Skillsets</h1>
+      <div className="text-center mb-8">
+        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }} className="mt-4 text-lg text-gray-300">
+          Développeur Fullstack passionné par les interfaces immersives
+        </motion.p>
+        <h3 className="text-white font-medium text-2xl">
           I work with modern technologies
         </h3>
-      </div>
-
-      <div className="flex justify-center">
-        <p className="text-gray-400 font-serif">
+        <p className="text-gray-400 mt-2">
           My vocation is to create sites that are easy to use and attractive to my users.
         </p>
       </div>
 
-      <section
-        id="skills"
-        className='mb-10 flex flex-col items-center p-6 md:p-12 lg:p-24 w-3xl mx-auto rounded-xl text-white px-4 py-4 transition gap-3 '
-        style={{ transform: "scale(0.9)" }}
-      >
-        {/* Backend */}
-        <div className="flex flex-row justify-around flex-wrap mt-2 gap-5 items-center relative z-10">
-          {Backend_skill.map((skill, index) => (
-            <SkillItem key={index} icon={skill.icon} index={index} />
-          ))}
-        </div>
-
-        {/* Frontend */}
-        <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center relative z-10">
-          {Frontend_skill.map((skill, index) => (
-            <SkillItem key={index} icon={skill.icon} index={index} />
-          ))}
-        </div>
-
-        {/* Full stack */}
-        <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center relative z-10">
-          {Full_stack.map((skill, index) => (
-            <SkillItem key={index} icon={skill.icon} index={index} />
-          ))}
-        </div>
-
-        {/* Tools */}
-        <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center relative z-10">
-          {Tools.map((skill, index) => (
-            <SkillItem key={index} icon={skill.icon} index={index} />
-          ))}
-        </div>
-      </section>
-    </div>
+      <div className="space-y-12 w-full max-w-5xl">
+        {renderCategory("Backend", Backend_skill)}
+        {renderCategory("Frontend", Frontend_skill)}
+        {renderCategory("Full Stack", Full_stack)}
+        {renderCategory("Tools", Tools)}
+      </div>
     </section>
-    
-  );
+  )
 }
-
