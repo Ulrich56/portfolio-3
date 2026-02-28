@@ -29,7 +29,7 @@ export default function SkillsSection() {
         className="flex items-center justify-center p-6 rounded-xl 
                    bg-white/10 backdrop-blur-md border border-white/20 
                    transition-transform duration-300 hover:scale-110 
-                   hover:bg-white/20 hover:border-white/50"
+                   hover:bg-linear-to-bl from-gray-800 via-black/25 to-gray-800 hover:border-white/50"
       >
         {icon}
       </motion.div>
