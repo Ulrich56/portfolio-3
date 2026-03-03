@@ -38,7 +38,7 @@ export default function ProjectsSection() {
         Projects
       </h2>
 
-      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 max-w-5xl xl:max-w-6xl mx-auto px-6">
+      <div className="grid md:grid-cols-2 xl:grid-cols-2 gap-8 max-w-5xl xl:max-w-6xl mx-auto px-6">
         {projects.map((p, i) => (
           <div
             key={i}
