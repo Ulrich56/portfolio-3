@@ -13,7 +13,7 @@ export default function NavBar() {
   return (
     <nav className="fixed top-0 left-0 w-full bg-black/70 backdrop-blur-md z-50">
       <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
-        <h1 className="text-xl font-bold font-serif italic">Ulrich.P</h1>
+        <h1 className="text-xl font-bold font-serif italic text-white">Ulrich.P</h1>
 
         {/* Bouton burger visible en mobile */}
         <button
