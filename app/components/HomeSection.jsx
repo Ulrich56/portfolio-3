@@ -15,8 +15,10 @@ export default function HomeSection() {
                         Salut, je suis Ulrich Pineiro Adeniyi Nanouga
                     </motion.h1>
                     <p className="text-xl text-amber-300 mt-6">Fullstack Developer • UI/UX Designer</p>
-                    <button className="flex items-center mt-6 gap-2 px-4 py-3 hover:animate-bounce hover:mt-8 bg-yellow-500 rounded-lg hover:bg-transparent hover:border-2 hover:border-amber-300 hover:shadow-[0_0_15px_3px_rgba(255,215,0,0.8)] hover:text-amber-300 transition">
+                    <button className=" mt-6 gap-2 px-4 py-3 hover:animate-bounce hover:mt-8 bg-yellow-500 rounded-lg hover:bg-transparent hover:border-2 hover:border-amber-300 hover:shadow-[0_0_15px_3px_rgba(255,215,0,0.8)] hover:text-amber-300 transition">
+                       <a href="#projects" className="flex items-center gap-2">
                         Découvrir mes projets <FaChevronRight />
+                        </a>
                     </button>
                 </div>
                 
