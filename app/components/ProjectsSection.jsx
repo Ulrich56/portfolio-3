@@ -34,7 +34,7 @@ export default function ProjectsSection() {
       transition={{ duration: 1.2, ease: "easeInOut" }}
       className="py-20"
     >
-      <h2 className="text-3xl italic hover:text-amber-300 font-serif underline text-center mb-10">
+      <h2 className="text-3xl italic text-white hover:text-amber-300 font-serif underline text-center mb-10">
         Projects
       </h2>
 

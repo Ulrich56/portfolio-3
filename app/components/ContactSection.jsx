@@ -4,7 +4,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-20 text-white">
       <div className="max-w-3xl mx-auto text-center mb-10">
-        <h2 className="text-3xl font-bold mb-4">Contactez-moi</h2>
+        <h2 className="text-3xl font-bold mb-4 text-white">Contactez-moi</h2>
         <p className="text-gray-300">
           Envoyez-moi un message pour collaborer ou échanger.
         </p>
