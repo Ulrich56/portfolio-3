@@ -67,12 +67,12 @@ export default function ContactSection() {
         </button>
       </form>
 
-      <div className="max-w-3xl mx-auto mt-10 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 justify-center text-center">
+      <div className="xl:max-w-3xl md:max-w-3xl lg:max-w-3xl 2xl:max-w-3xl w-100 mx-auto mt-10 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 justify-center text-center">
           <a
             href="https://wa.me/2250501103521"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 px-5 py-4 bg-green-500 text-white rounded-lg shadow-md hover:bg-green-600 hover:scale-105 transition-transform duration-300"
+            className="flex items-center justify-center  gap-2 px-5 py-4 bg-green-500 text-white rounded-xl shadow-md hover:bg-green-600 hover:scale-105 transition-transform duration-300"
           >
             <FaWhatsapp className="text-2xl" />
             <span className="font-semibold">WhatsApp</span>
