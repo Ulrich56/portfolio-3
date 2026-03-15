@@ -50,11 +50,22 @@ export default function SkillsSection() {
   return (
     <section id="skills" className="flex flex-col items-center mt-30 justify-center gap-10 py-20 px-6 lg:px-24 text-white">
       <h1 className="text-3xl italic hover:text-amber-300 font-serif underline">Skillsets</h1>
-      <div className="text-center mb-8">
+      <div className="text-center mb-4">
         <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }} className="mt-4 text-lg font-serif text-gray-400 ">
           Développeur Fullstack passionné par les interfaces immersives, je travaille avec des technologies modernes pour concevoir des sites à la fois attractifs et faciles à utiliser. Ma vocation est de transformer chaque projet en une expérience intuitive et engageante pour mes utilisateurs.
         </motion.p>
       </div>
+
+      <div className="flex flex-col sm:flex-row sm:space-x-4 items-center justify-between md:justify-start">
+          
+                <a
+                    href="/CV PINEIRO Ulrich Adeniyi Nanouga.pdf"
+                    download
+                    className="rounded-full mb-6 px-4 py-3 text-white border-amber-300 border-2 hover:bg-transparent hover:border-2 hover:border-amber-300 hover:shadow-[0_0_15px_3px_rgba(255,215,0,0.8)] hover:text-amber-300 transition"
+                >
+                    Télécharger mon CV
+                </a>
+            </div>
 
       <div className="space-y-12 w-full max-w-5xl">
         {renderCategory("Backend", Backend_skill)}

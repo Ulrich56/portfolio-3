@@ -20,6 +20,8 @@ export default function HomeSection() {
                        <a href="#projects" className="flex items-center gap-2">
                         Découvrir mes projets <FaChevronRight />
                         </a>
+
+                        
                     </button>
 
                     
@@ -39,7 +41,11 @@ export default function HomeSection() {
                 className="
                  xl:max-w-350 mx-4 text-center"
             />
+
+            
         </div>
+
+
     </div>
 
     
