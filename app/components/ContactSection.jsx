@@ -67,7 +67,7 @@ export default function ContactSection() {
         </button>
       </form>
 
-      <div className="max-w-3xl mx-auto mt-10 md:w-160 sm:w-100 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 justify-center text-center">
+      <div className="max-w-3xl mx-auto mt-10 md:w-160 w-90 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 justify-center text-center">
           <a
             href="https://wa.me/2250501103521"
             target="_blank"
