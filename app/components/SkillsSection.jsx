@@ -56,7 +56,13 @@ export default function SkillsSection() {
         </motion.p>
       </div>
 
-      <div className="flex flex-col sm:flex-row sm:space-x-4 items-center justify-between md:justify-start">
+      <motion.div 
+      
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+      
+      className="flex flex-col sm:flex-row sm:space-x-4 items-center justify-between md:justify-start">
           
                 <a
                     href="/CV PINEIRO Ulrich Adeniyi Nanouga.pdf"
@@ -65,7 +71,7 @@ export default function SkillsSection() {
                 >
                     Télécharger mon CV
                 </a>
-            </div>
+            </motion.div>
 
       <div className="space-y-12 w-full max-w-5xl">
         {renderCategory("Backend", Backend_skill)}
