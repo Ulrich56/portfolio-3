@@ -3,6 +3,7 @@
 import { FaChevronRight } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import { FaWhatsapp } from "react-icons/fa6";
 
 export default function HomeSection() {
   return (
@@ -20,6 +21,8 @@ export default function HomeSection() {
                         Découvrir mes projets <FaChevronRight />
                         </a>
                     </button>
+
+                    
                 </div>
                 
             </div>
@@ -31,7 +34,7 @@ export default function HomeSection() {
                 sequence={[
                     "Je suis PINEIRO Ulrich A.N, developpeur fullstack junior d'applications web et mobile. J'ai une solide formation en développement web et mobile, avec une expertise en technologies front-end et back-end. Je suis passionne par la technologie et tout ce qui l'entoure je suis donc en plus de ma formation en developpement fullstack etudiant en licence de Reseau et Securite Informatique. Je suis quelqu'un qui est beaucoup attirer par le design et la beaute des choses, je fournis donc un grand effort pour fournir a mes utilisateurs des sites performants avec des designs attirant et facile a utiliser en fesant passer leur comfort avant tout. Je suis curieux, autonome, rigoureux, je sais rechercher, travailler en equipe.",
                 ]}
-                speed={170}
+                speed={200}
                 style={{ fontSize: "1.1em", color: "#E0E0E0", fontFamily: "serif", fontStyle: "italic" }}
                 className="
                  xl:max-w-350 mx-4 text-center"

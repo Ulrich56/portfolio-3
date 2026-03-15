@@ -1,5 +1,10 @@
 "use client";
 
+import { FaWhatsapp } from "react-icons/fa6";
+import { CiLinkedin } from "react-icons/ci";
+import { PiMicrosoftOutlookLogo } from "react-icons/pi";
+
+
 export default function ContactSection() {
   return (
     <section id="contact" className="py-20 text-white">
@@ -61,6 +66,21 @@ export default function ContactSection() {
           Envoyer
         </button>
       </form>
+
+      <div className="max-w-2xl mx-auto mt-10 flex justify-center gap-6">
+          <a href="https://wa.me/2250501103521" target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex items-center gap-2 px-4 py-3 bg-green-500 rounded-lg hover:bg-green-600 transition">
+              <FaWhatsapp className="text-white" />
+               WhatsApp
+          </a>
+          <a href="https://www.linkedin.com/in/ulrich-adeniyi-pineiro-10670a373/" target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex items-center gap-2 px-4 py-3 bg-blue-600 rounded-lg hover:bg-blue-700 transition">
+              <CiLinkedin className="text-white" />
+               LinkedIn
+          </a>
+          <a href="mailto:ulrich.pineiro@epitech.eu" target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex items-center gap-2 px-4 py-3 bg-gray-700 rounded-lg hover:bg-gray-800 transition">
+              <PiMicrosoftOutlookLogo className="text-white" />
+               Outlook
+          </a>
+      </div>
     </section>
   );
 }
