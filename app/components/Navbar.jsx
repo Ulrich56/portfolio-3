@@ -51,7 +51,7 @@ export default function NavBar() {
             <a
               key={section.id}
               href={`#${section.id}`}
-              className="uppercase tracking-wider hover:text-yellow-400 transition"
+              className="uppercase tracking-wider text-white hover:text-yellow-400 transition"
             >
               {section.label}
             </a>

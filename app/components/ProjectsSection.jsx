@@ -15,6 +15,21 @@ export default function ProjectsSection() {
       desc: "Plateforme de découverte et de notation cinématographique avec Next.js, TMDB API et MongoDB.", 
       link: "https://rotten-tomatoes-1.onrender.com" 
     },
+    { 
+      title: "Internal Purchase Requisition form", 
+      desc: "Formulaire de demande d'achat interne pour une entreprise, développé avec React et Node.js pour automatiser le processus d'approbation.", 
+      link: "https://eldest-fuchsia-01v7znausb.edgeone.app/" 
+    },
+    { 
+      title: "PURCHASE ORDER MANAGEMENT form", 
+      desc: "Formulaire de gestion des commandes d'achat pour une entreprise, développé avec React et Node.js pour automatiser le processus de suivi et de gestion des commandes.", 
+      link: "https://inventary.edgeone.app/" 
+    },
+    { 
+      title: "Logistics Quote Request form", 
+      desc: "Formulaire de demande de devis logistique pour une entreprise, développé avec React et Node.js pour automatiser le processus de soumission et de gestion des devis.", 
+      link: "https://logistic-quote.edgeone.app/" 
+    },
   ];
 
   const { ref, inView } = useInView({
