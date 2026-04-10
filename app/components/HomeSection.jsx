@@ -15,7 +15,7 @@ export default function HomeSection() {
                     <motion.h1 initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} className="text-5xl font-bold font-serif italic pr-2" >
                         Salut, je suis Ulrich Pineiro Adeniyi Nanouga
                     </motion.h1>
-                    <p className="text-xl text-amber-300 mt-6">Fullstack Developer • UI/UX Designer</p>
+                    <p className="text-xl text-amber-300 mt-6">Développeur Fullstack orienté Front-end </p>
                     <button className=" mt-6 gap-2 px-4 py-3 hover:animate-bounce hover:mt-8 bg-yellow-500 rounded-full hover:bg-transparent hover:border-2 hover:border-amber-300 hover:shadow-[0_0_15px_3px_rgba(255,215,0,0.8)] hover:text-amber-300 transition">
                        <a href="#projects" className="flex items-center gap-2">
                         Découvrir mes projets <FaChevronRight />
@@ -34,7 +34,7 @@ export default function HomeSection() {
             <h1 className="text-3xl italic text-white hover:text-amber-300 font-serif underline"> About me</h1>
             <TypeAnimation
                 sequence={[
-                    "Je suis PINEIRO Ulrich A.N, developpeur fullstack junior d'applications web et mobile. J'ai une solide formation en développement web et mobile, avec une expertise en technologies front-end et back-end. Je suis passionne par la technologie et tout ce qui l'entoure je suis donc en plus de ma formation en developpement fullstack etudiant en licence de Reseau et Securite Informatique. Je suis quelqu'un qui est beaucoup attirer par le design et la beaute des choses, je fournis donc un grand effort pour fournir a mes utilisateurs des sites performants avec des designs attirant et facile a utiliser en fesant passer leur comfort avant tout. Je suis curieux, autonome, rigoureux, je sais rechercher, travailler en equipe.",
+                    "Je suis PINEIRO Ulrich A.N, developpeur fullstack junior d'applications web et mobile. J'ai une solide formation en développement web et mobile, avec une expertise en technologies front-end et back-end. Je suis passionne par la technologie et tout ce qui l'entoure je suis donc en plus de ma formation en developpement fullstack etudiant en licence de Reseau et Securite Informatique. Je suis quelqu'un qui est beaucoup attirer par le design et la beaute des choses, je fournis donc un grand effort pour fournir a mes utilisateurs des sites performants avec des designs attirant et facile a utiliser en fesant passer leur comfort avant tout. Je suis curieux, autonome, rigoureux, je sais rechercher et travailler en equipe.",
                 ]}
                 speed={200}
                 style={{ fontSize: "1.1em", color: "#E0E0E0", fontFamily: "serif", fontStyle: "italic" }}
